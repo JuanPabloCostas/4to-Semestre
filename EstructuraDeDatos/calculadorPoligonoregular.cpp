@@ -18,5 +18,6 @@ int main(){
     cin >> apotema;
 
     cout << "El perimetro del poligono es: " << noLados*lado << "\n";
-    cout << "El area del poligono es: " << noLados*lado * apotema / 2;
+    cout << "El area del poligono es: " << noLados * lado * apotema / 2;
+
 }
