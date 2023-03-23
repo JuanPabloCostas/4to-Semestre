@@ -1,3 +1,15 @@
+/*
+Universidad Autónoma De Querétaro
+Facultad de informática
+
+Estructura de datos
+M.I.S.D. Erika del Río Magaña
+
+Costas Rueda Juan Pablo
+EXP: 307081
+4to Semestre
+*/
+
 #include <cstdlib>
 #include <iostream>
 
