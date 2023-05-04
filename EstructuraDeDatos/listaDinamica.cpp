@@ -10,20 +10,25 @@ struct Nodo
 };
 
 void instertarLista ( Nodo *&, int );
+void mostrarLista(Nodo *);
 
 Nodo *head = NULL;
 
 
 int main(){
     int n;
-    cout << "Ingresa un numero entero";
+    cout << "Ingresa un numero entero: ";
     cin >> n;
     instertarLista(head,n);
+    cout << "\n";
+
+    cout << "\nLos elementos de la lista son: ";
+    mostrarLista(head);
     cout << "\n";
     }
 
 
-void instertarLista(Nodo *& new_nodo, int n){
+void instertarLista(Nodo *& head, int n){
     Nodo * new_nodo = new Nodo();
     new_nodo->data=n;
     Nodo * aux1 = head;
@@ -45,7 +50,17 @@ void instertarLista(Nodo *& new_nodo, int n){
     }
     new_nodo -> next = aux1;
     
+    cout << "El dato ah ingresado a la lista";
     
-    
+}
+
+void mostrarLista(Nodo * head){
+    Nodo * actual = new Nodo();
+    actual = head;
+    while (actual != NULL)
+    {
+        cout << actual -> data << " >" ;
+        actual = actual ->next;
+    }
     
 }
