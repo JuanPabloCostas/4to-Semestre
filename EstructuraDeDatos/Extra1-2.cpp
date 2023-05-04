@@ -23,7 +23,6 @@ int main(){
             arr.push_back(n);
         }
         n++;
-        cout << n << "\n";
     }
     
     
