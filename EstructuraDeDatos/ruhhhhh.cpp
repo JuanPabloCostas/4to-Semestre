@@ -19,7 +19,7 @@ Nodo * head = NULL;
 int main(){
 int n, x;
 
-cout << "Ingresa la cantidad de numeros que quieras arreglar";
+cout << "Ingresa la cantidad de numeros que quieras arreglar: ";
 cin >> x;
 for(int y=0; y < x; y++){
 cout << "Ingresa un numero entero: ";
