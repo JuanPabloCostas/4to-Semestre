@@ -521,15 +521,152 @@ Aunque ITIL no se enfoca específicamente en el desarrollo de proyectos de softw
 A continuación, se describen algunas áreas clave que abarca el estándar ITIL:
 
 1. **Estrategia del servicio**: Se refiere a la definición de la estrategia y los objetivos de los servicios de TI. Esto incluye la alineación de los servicios de TI con las necesidades del negocio, la identificación de oportunidades y la planificación de mejoras.
-
+<!-- markdownlint-disable MD000 -->
 2. **Diseño del servicio**: Se ocupa del diseño y la planificación de los servicios de TI, incluyendo el diseño de procesos, la definición de los niveles de servicio, la gestión de la capacidad, la disponibilidad y la continuidad del servicio.
-
+<!-- markdownlint-disable MD000 -->
 3. **Transición del servicio**: Se refiere a la implementación de nuevos servicios de TI o cambios en los servicios existentes. Esto incluye la gestión de cambios, la planificación de la liberación de software, la gestión de la configuración y la prueba y validación de los servicios.
-
+<!-- markdownlint-disable MD000 -->
 4. **Operación del servicio**: Se centra en la entrega diaria de los servicios de TI y el soporte a los usuarios. Esto incluye la gestión de incidentes, la gestión de problemas, la gestión de eventos, la gestión de solicitudes y la gestión de accesos.
-
+<!-- markdownlint-disable MD000 -->
 5. **Mejora continua del servicio**: Se refiere a la mejora constante de los servicios de TI mediante el análisis de los resultados, la identificación de áreas de mejora y la implementación de acciones correctivas y preventivas.
 
 ITIL proporciona un enfoque práctico y estructurado para la gestión de servicios de TI, que puede ser aplicado en proyectos de desarrollo de software para mejorar la calidad y el soporte de los servicios relacionados con el software. La adopción de ITIL puede ayudar a las organizaciones a establecer procesos consistentes, optimizar los recursos, mejorar la comunicación y alinear los servicios de TI con los objetivos del negocio.
 
 Es importante tener en cuenta que ITIL es un marco de referencia y una guía, y su implementación puede variar según las necesidades y los requisitos específicos de cada organización y proyecto de software.
+
+----------
+
+## Unidad 5
+
+## Diseño de Sistemas
+
+### Objetivos de diseño
+
+En el contexto del desarrollo de proyectos de software, los objetivos de diseño se refieren a los resultados o metas que se pretenden lograr durante el proceso de diseño del software. Estos objetivos están relacionados con la creación de un sistema de software que cumpla con los requisitos y expectativas del cliente, así como con los estándares de calidad y las restricciones técnicas y de recursos.
+
+Los objetivos de diseño ayudan a guiar el proceso de diseño y a tomar decisiones sobre las características, la arquitectura y el enfoque general del software. Estos objetivos pueden variar dependiendo del proyecto y las necesidades específicas, pero generalmente se centran en los siguientes aspectos:
+
+1. **Funcionalidad**: Los objetivos de diseño relacionados con la funcionalidad se centran en garantizar que el software cumpla con los requisitos funcionales establecidos. Esto implica definir y diseñar las funciones y características que el software debe ofrecer para cumplir con los objetivos del proyecto.
+<!-- markdownlint-disable MD000 -->
+2. **Usabilidad**: Los objetivos de diseño relacionados con la usabilidad se enfocan en facilitar el uso del software y proporcionar una experiencia positiva al usuario. Esto implica considerar aspectos como la interfaz de usuario, la navegación, la accesibilidad y la capacidad de respuesta del sistema.
+<!-- markdownlint-disable MD000 -->
+3. **Eficiencia**: Los objetivos de diseño relacionados con la eficiencia se centran en optimizar el rendimiento y el uso de los recursos del sistema. Esto implica minimizar el consumo de memoria, optimizar los algoritmos y estructuras de datos, y garantizar tiempos de respuesta rápidos.
+<!-- markdownlint-disable MD000 -->
+4. **Mantenibilidad**: Los objetivos de diseño relacionados con la mantenibilidad se refieren a la capacidad de realizar modificaciones y mejoras en el software de manera eficiente. Esto implica diseñar el software de manera modular, utilizar estándares de codificación y documentación adecuados, y facilitar las pruebas y depuración del sistema.
+<!-- markdownlint-disable MD000 -->
+5. **Seguridad**: Los objetivos de diseño relacionados con la seguridad se enfocan en proteger el software y los datos contra amenazas y vulnerabilidades. Esto implica implementar medidas de seguridad adecuadas, como autenticación, autorización y encriptación de datos, para proteger la confidencialidad, integridad y disponibilidad del sistema.
+
+Estos son solo algunos ejemplos de objetivos de diseño que pueden aplicarse en el desarrollo de proyectos de software. Es importante tener en cuenta que los objetivos de diseño pueden ser específicos de cada proyecto y deben adaptarse a las necesidades y requisitos particulares de cada contexto. Los objetivos de diseño proporcionan una guía clara y establecen los criterios para evaluar la efectividad y el éxito del diseño del software.
+
+----------
+
+### Diseño estructurado
+
+El diseño estructurado es un enfoque metodológico utilizado en el desarrollo de proyectos de software que se centra en la organización y estructuración del sistema de software. Se basa en el principio de descomponer el sistema en módulos más pequeños y más manejables, lo que permite una comprensión más clara, un desarrollo más eficiente y una fácil mantenibilidad del software.
+
+El diseño estructurado sigue varios principios y técnicas clave:
+
+1. **División en módulos**: El sistema de software se divide en módulos más pequeños y autónomos. Cada módulo tiene una función específica y se puede desarrollar, probar y mantener de manera independiente. Esta descomposición modular facilita la comprensión y la gestión del sistema.
+<!-- markdownlint-disable MD000 -->
+2. **Jerarquía y estructura**: Los módulos se organizan jerárquicamente, lo que significa que algunos módulos se vuelven subordinados a otros. Esto crea una estructura ordenada y coherente que facilita la comprensión y el flujo de información dentro del sistema.
+<!-- markdownlint-disable MD000 -->
+3. **Estructuras de control**: El diseño estructurado utiliza estructuras de control bien definidas, como secuencia, selección y repetición, para controlar el flujo de ejecución del programa. Esto facilita la comprensión de la lógica del software y mejora la legibilidad y mantenibilidad del código.
+<!-- markdownlint-disable MD000 -->
+4. **Enfoque descendente**: El diseño estructurado sigue un enfoque descendente, comenzando desde un nivel alto de abstracción y descomponiendo gradualmente el sistema en módulos más pequeños y detallados. Esto permite una comprensión paso a paso y facilita el desarrollo iterativo del software.
+<!-- markdownlint-disable MD000 -->
+5. **Documentación clara**: El diseño estructurado enfatiza la documentación clara y detallada. Se utiliza una notación adecuada para representar los módulos, las relaciones entre ellos y la lógica del sistema. Esto facilita la comunicación y la comprensión de los diferentes elementos del diseño.
+
+El diseño estructurado se basa en la idea de que un sistema complejo se puede construir y comprender mejor mediante la descomposición en partes más pequeñas y manejables. Este enfoque ayuda a mejorar la modularidad, la legibilidad, la mantenibilidad y la eficiencia del desarrollo de software.
+
+Es importante destacar que, aunque el diseño estructurado ha sido ampliamente utilizado en el pasado, ha sido reemplazado en gran medida por enfoques más modernos, como el diseño orientado a objetos y el diseño basado en componentes. Sin embargo, muchos de los principios y conceptos del diseño estructurado siguen siendo relevantes y se aplican en diferentes formas en el desarrollo de software actual.
+
+----------
+
+### Especificación de procesos
+
+La especificación de procesos en el contexto del desarrollo de proyectos de software se refiere a la documentación y descripción detallada de los procesos involucrados en el ciclo de vida del software. Estos procesos pueden incluir actividades como la gestión de requisitos, el análisis y diseño, la implementación, las pruebas, el despliegue y el mantenimiento del software.
+
+La especificación de procesos tiene como objetivo principal proporcionar una comprensión clara y completa de cómo se llevarán a cabo las diferentes etapas del desarrollo del software y cómo se relacionan entre sí. Esta documentación detallada ayuda a establecer una base sólida para la gestión, el seguimiento y la mejora del proyecto.
+
+A continuación, se presentan algunos aspectos clave de la especificación de procesos en el desarrollo de proyectos de software:
+
+1. **Descripción de actividades**: La especificación de procesos debe describir las actividades específicas que se llevarán a cabo en cada etapa del ciclo de vida del software. Por ejemplo, en la etapa de análisis y diseño, se pueden incluir actividades como la recopilación de requisitos, el modelado de datos y el diseño de la arquitectura del sistema.
+<!-- markdownlint-disable MD000 -->
+2. **Flujos de trabajo**: Se deben definir los flujos de trabajo o secuencias de actividades que se seguirán en cada etapa del proceso. Esto implica establecer las dependencias entre las actividades y los hitos importantes para garantizar una ejecución fluida del proyecto.
+<!-- markdownlint-disable MD000 -->
+3. **Roles y responsabilidades**: La especificación de procesos debe identificar los roles y las responsabilidades de los miembros del equipo de desarrollo y otros stakeholders involucrados en cada etapa del proceso. Esto ayuda a establecer una clara asignación de responsabilidades y una comunicación efectiva entre los miembros del equipo.
+<!-- markdownlint-disable MD000 -->
+4. **Herramientas y recursos**: Se pueden especificar las herramientas, los recursos y los entornos necesarios para llevar a cabo cada actividad del proceso. Esto incluye software, hardware, herramientas de gestión de proyectos, sistemas de control de versiones, etc.
+<!-- markdownlint-disable MD000 -->
+5. **Flujo de información**: Se debe describir cómo se gestionará y compartirá la información entre las diferentes etapas del proyecto. Esto incluye la documentación de requisitos, el intercambio de información entre los miembros del equipo, la gestión de cambios, etc.
+
+La especificación de procesos es esencial para garantizar la consistencia, la calidad y la eficiencia en el desarrollo de proyectos de software. Proporciona una guía clara y detallada para los miembros del equipo, facilita la comunicación y la colaboración, y establece una base para la mejora continua de los procesos.
+
+Es importante destacar que la especificación de procesos puede variar según el enfoque metodológico utilizado en el proyecto, como metodologías ágiles, en cascada, o híbridas. Además, la especificación de procesos puede evolucionar a lo largo del tiempo a medida que se aprende y se mejoran los procesos en el contexto específico del proyecto y la organización.
+
+----------
+
+### Diseño de entrada
+
+El diseño de entrada, en el contexto del desarrollo de proyectos de software, se refiere a la etapa del diseño en la cual se define cómo se recopilarán y procesarán los datos de entrada que ingresan al sistema de software. La entrada puede provenir de diferentes fuentes, como usuarios, dispositivos externos, otros sistemas, bases de datos, archivos, entre otros.
+
+El diseño de entrada implica tomar decisiones sobre cómo se capturarán, validarán y procesarán los datos de entrada para su uso en el sistema de software. A continuación, se describen algunos aspectos clave del diseño de entrada:
+
+1. **Captura de datos**: Se define cómo se recopilarán los datos de entrada en el sistema. Esto puede implicar la utilización de formularios, interfaces de usuario, sensores, archivos, APIs, entre otros. Se deben considerar aspectos como la facilidad de uso, la eficiencia y la precisión en la captura de datos.
+<!-- markdownlint-disable MD000 -->
+2. **Validación de datos**: Se establecen los criterios y las reglas para validar los datos de entrada. Esto implica comprobar la integridad, la consistencia y la corrección de los datos antes de ser procesados por el sistema. Se pueden implementar controles de validación, como rangos aceptables, formatos específicos, verificación de duplicados, etc.
+<!-- markdownlint-disable MD000 -->
+3. **Transformación de datos**: Si es necesario, se define cómo se transformarán los datos de entrada para adaptarlos a las necesidades del sistema. Esto puede incluir procesos de conversión de formatos, cálculos, normalización, limpieza de datos, entre otros.
+<!-- markdownlint-disable MD000 -->
+4. **Interfaz de usuario**: En el diseño de entrada también se considera la interfaz de usuario que permitirá a los usuarios ingresar los datos al sistema. Se debe diseñar una interfaz intuitiva y fácil de usar, que proporcione las instrucciones necesarias y guíe a los usuarios en la captura de los datos.
+<!-- markdownlint-disable MD000 -->
+5. **Seguridad de la entrada**: También se deben considerar medidas de seguridad para proteger la entrada de datos. Esto puede incluir validaciones de seguridad, como autenticación y autorización, para garantizar que solo los usuarios autorizados puedan ingresar y manipular los datos.
+
+El diseño de entrada es crucial para garantizar que el sistema de software pueda recibir y procesar de manera eficiente y precisa los datos que necesita para su funcionamiento. Un diseño de entrada bien realizado garantiza la calidad de los datos ingresados, mejora la usabilidad del sistema y evita errores y problemas en etapas posteriores del procesamiento de datos.
+
+Es importante tener en cuenta que el diseño de entrada debe considerar los requisitos y las necesidades específicas del proyecto y adaptarse a ellos. Además, el diseño de entrada puede estar estrechamente relacionado con el diseño de salida y otros componentes del sistema de software, ya que la entrada y la salida de datos suelen estar interconectadas.
+
+----------
+
+### Diseño de pantalla
+
+El diseño de pantalla, en el contexto del desarrollo de proyectos de software, se refiere a la etapa del diseño en la cual se define cómo se mostrará la información y se presentarán las funcionalidades en la interfaz de usuario del sistema de software. El diseño de pantalla tiene como objetivo crear una experiencia de usuario **atractiva, intuitiva y efectiva.**
+
+El diseño de pantalla implica tomar decisiones sobre la disposición de los elementos visuales, la navegación, la organización de la información y la interacción del usuario con la interfaz. A continuación, se describen algunos aspectos clave del diseño de pantalla:
+
+1. **Distribución de elementos**: Se define cómo se organizarán los elementos en la pantalla, como botones, campos de entrada, etiquetas, imágenes y otros componentes visuales. Se deben tener en cuenta principios de diseño como la jerarquía visual, la agrupación lógica y la distribución equilibrada.
+<!-- markdownlint-disable MD000 -->
+2. **Diseño visual**: Se establecen los aspectos estéticos de la interfaz de usuario, como la elección de colores, fuentes, íconos y otros elementos visuales. El diseño visual debe seguir las directrices de la identidad visual de la marca y garantizar la legibilidad y la coherencia visual en todas las pantallas.
+<!-- markdownlint-disable MD000 -->
+3. **Navegación y flujo**: Se define cómo los usuarios pueden navegar por las diferentes pantallas y funcionalidades del sistema. Esto incluye la ubicación de los menús, los enlaces, las pestañas, las barras de navegación y otras opciones de navegación que permitan a los usuarios moverse de manera eficiente y lógica dentro del sistema.
+<!-- markdownlint-disable MD000 -->
+4. **Feedback y estados**: Se define cómo se proporcionará feedback al usuario en respuesta a sus acciones y cómo se representarán los diferentes estados del sistema. Por ejemplo, se pueden utilizar mensajes de confirmación, barras de progreso, indicadores de carga y otros elementos visuales para informar al usuario sobre el progreso y el resultado de sus acciones.
+<!-- markdownlint-disable MD000 -->
+5. **Accesibilidad**: También se deben considerar las pautas de accesibilidad en el diseño de pantalla para garantizar que el software sea utilizable por personas con discapacidades visuales, auditivas o motoras. Esto puede incluir el uso de contrastes de color adecuados, tamaños de fuente ajustables, soporte para tecnologías de asistencia, etc.
+
+El diseño de pantalla es fundamental para crear una interfaz de usuario efectiva y satisfactoria. Un diseño de pantalla bien realizado mejora la usabilidad, la comprensión de la información y la interacción del usuario con el sistema de software.
+
+Es importante tener en cuenta que el diseño de pantalla debe basarse en la comprensión de los usuarios, sus necesidades y los objetivos del sistema. Se recomienda realizar pruebas de usabilidad y obtener retroalimentación de los usuarios para iterar y mejorar el diseño de pantalla a lo largo del desarrollo del proyecto de software.
+
+----------
+
+### Diseño de salida
+
+El diseño de salida, en el contexto del desarrollo de proyectos de software, se refiere a la etapa del diseño en la cual se define cómo se presentará la información y los resultados al usuario o a otros sistemas externos. El diseño de salida se enfoca en la forma en que los datos y la información serán mostrados, representados y comunicados de manera efectiva.
+
+El diseño de salida implica tomar decisiones sobre la presentación visual, la estructura y el formato de los datos que serán mostrados al usuario. A continuación, se describen algunos aspectos clave del diseño de salida:
+
+1. **Formato de presentación**: Se define el formato en el cual se mostrará la información, como texto, tablas, gráficos, imágenes, diagramas u otros elementos visuales. Se debe tener en cuenta la legibilidad y la comprensión de la información presentada.
+<!-- markdownlint-disable MD000 -->
+2. **Organización y estructura**: Se determina cómo se organizará y estructurará la información para facilitar la comprensión y el análisis. Esto puede implicar el uso de encabezados, subtitulares, listas, resaltado de elementos clave y otras técnicas de organización visual.
+<!-- markdownlint-disable MD000 -->
+3. **Personalización y opciones de visualización**: Se pueden proporcionar opciones para personalizar la forma en que se muestra la información, como el tamaño de fuente, el idioma, los filtros o los informes personalizables. Esto permite a los usuarios adaptar la salida según sus preferencias y necesidades específicas.
+<!-- markdownlint-disable MD000 -->
+4. **Representación gráfica**: Si es necesario, se pueden utilizar gráficos, diagramas o visualizaciones para presentar la información de manera más visual y comprensible. Esto puede incluir gráficos de barras, gráficos circulares, diagramas de flujo, mapas, entre otros.
+<!-- markdownlint-disable MD000 -->
+5. **Canal de salida**: Se define el canal o los medios a través de los cuales se entregará la información al usuario, como la pantalla del sistema, informes impresos, archivos descargables o interfaces de programación de aplicaciones (API) para sistemas externos.
+
+El diseño de salida es fundamental para proporcionar información relevante y comprensible a los usuarios. Un diseño de salida bien realizado facilita la interpretación de los datos, apoya la toma de decisiones informadas y mejora la experiencia del usuario.
+
+Es importante tener en cuenta que el diseño de salida debe adaptarse a las necesidades y características específicas del público objetivo y los requisitos del proyecto. Se recomienda realizar pruebas de usabilidad y obtener retroalimentación de los usuarios para iterar y mejorar el diseño de salida a lo largo del desarrollo del proyecto de software.
+
