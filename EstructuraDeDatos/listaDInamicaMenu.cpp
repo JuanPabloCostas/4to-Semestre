@@ -10,29 +10,60 @@ struct Nodo{
 
 };
 
+void menu();
+
 void insertarLista(Nodo *&, int);
 
 void mostrarLista(Nodo *);
 
 void buscarLista(Nodo *, int n);
 
+void eliminarLista();
+
 Nodo * head = NULL;
 
 int main(){
-int n, x;
-
-cout << "Ingresa la cantidad de numeros que quieras arreglar: ";
-cin >> x;
-for(int y=0; y < x; y++){
-cout << "Ingresa un numero entero: ";
-cin >> n;
-insertarLista(head, n);
+menu();
 }
-mostrarLista(head);
-cout << "\n"; 
-cout << "Ingresa el numero a buscar en la lista: ";
-cin >> n;
-buscarLista(head, n);
+
+void menu(){
+    bool loop = true;
+ do
+ {
+    int o = 0;
+    cout << "\n\nSeleccione una opcion: \n";
+    cout << "1- Insertar una lista\n";
+    cout << "2- Mostrar la lista\n";
+    cout << "3- Buscar elemento en la lista\n";
+    cin >> o;
+
+    switch (o)
+    {
+    case 1:
+        int x, n;
+        cout << "Ingresa la cantidad de numeros que quieras arreglar: ";
+        cin >> x;
+        for(int y=0; y < x; y++){
+            cout << "Ingresa un numero entero: ";
+            cin >> n;
+            insertarLista(head, n);
+        }
+        break;
+    
+    case 2:
+        mostrarLista(head);
+        break;
+    case 3:
+        int p;
+        cout << "Ingresa el numero a buscar en la lista: ";
+        cin >> p;
+        buscarLista(head, p);
+        break;
+    default:
+        loop = false;
+        break;
+    }
+ } while (loop);
 
 }
 
