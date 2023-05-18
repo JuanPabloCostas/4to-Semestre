@@ -441,3 +441,95 @@ Los indicadores en el desarrollo de proyectos de software pueden abarcar diferen
 Es importante seleccionar los indicadores adecuados para el contexto del proyecto y definir criterios claros de medición. Además, los indicadores deben ser monitoreados regularmente y utilizados para tomar decisiones y realizar mejoras en el proyecto de software.
 
 En resumen, los indicadores son medidas cuantitativas o cualitativas utilizadas para evaluar y medir diferentes aspectos del desarrollo de proyectos de software, incluyendo el rendimiento, la calidad, la satisfacción del cliente y otros aspectos relevantes. Los indicadores proporcionan información objetiva que ayuda en la toma de decisiones y la mejora continua del proyecto.
+
+----------
+
+## Estándares
+
+### ISO
+
+ISO (Organización Internacional de Normalización) es una organización independiente y no gubernamental que se dedica a establecer estándares internacionales en diversos campos, incluido el desarrollo de proyectos de software. Los estándares ISO proporcionan pautas y mejores prácticas para ayudar a las organizaciones a lograr la calidad, la seguridad, la eficiencia y la compatibilidad en sus procesos y productos.
+
+En el contexto del desarrollo de proyectos de software, algunos de los estándares ISO relevantes son:
+
+1. **ISO/IEC 12207**: Este estándar establece los procesos del ciclo de vida del software, incluyendo actividades como la gestión de requisitos, el diseño, la implementación, la prueba y el mantenimiento. Proporciona una estructura para planificar, ejecutar, controlar y mejorar los procesos de desarrollo de software.
+<!-- markdownlint-disable MD000 -->
+2. **ISO/IEC 15288**: Este estándar define los procesos y actividades del ciclo de vida del sistema, incluyendo el desarrollo de software. Proporciona un marco para el desarrollo de sistemas complejos y aborda aspectos como la gestión de configuración, la integración del sistema y la validación y verificación.
+<!-- markdownlint-disable MD000 -->
+3. **ISO/IEC 27001**: Este estándar se centra en la gestión de la seguridad de la información. Proporciona un marco para establecer, implementar, mantener y mejorar un sistema de gestión de la seguridad de la información (SGSI) en una organización. Esto incluye aspectos como la evaluación de riesgos, la gestión de incidentes de seguridad y la protección de datos.
+<!-- markdownlint-disable MD000 -->
+4. **ISO/IEC 25000 (SQuaRE)**: Esta serie de estándares se refiere a la calidad del software y los sistemas de información. Define modelos y métricas para evaluar la calidad del software en términos de características como la funcionalidad, la usabilidad, la eficiencia, la fiabilidad y la seguridad.
+
+Es importante destacar que la implementación de los estándares ISO es voluntaria y depende de las necesidades y los objetivos de cada organización. Sin embargo, seguir los estándares ISO puede proporcionar beneficios como la mejora de la calidad del software, la eficiencia en los procesos, la conformidad con las regulaciones y normativas, y la confianza del cliente.
+
+Es recomendable revisar los estándares ISO pertinentes y adaptarlos a las necesidades específicas del proyecto y la organización, teniendo en cuenta las mejores prácticas y las directrices establecidas.
+
+----------
+
+### Estándar IEEE 830
+
+El estándar IEEE 830, también conocido como IEEE 830-1998 "IEEE Recommended Practice for Software Requirements Specifications", es un estándar desarrollado por el Instituto de Ingenieros Eléctricos y Electrónicos (IEEE) que establece pautas para la especificación de requisitos de software.
+
+El objetivo principal del estándar IEEE 830 es proporcionar un marco para documentar los requisitos de un sistema de software de manera clara, completa y consistente. La especificación de requisitos es una parte fundamental del proceso de desarrollo de software, ya que define las necesidades, expectativas y funcionalidades del sistema que se está construyendo.
+
+El estándar IEEE 830 establece recomendaciones sobre cómo estructurar y presentar la información en una especificación de requisitos de software. A continuación, se describen algunos aspectos clave del estándar:
+
+1. **Contenido de la especificación**: El estándar IEEE 830 sugiere los elementos que deben incluirse en una especificación de requisitos, como la introducción, el alcance, las definiciones, los requisitos funcionales y no funcionales, las restricciones y las dependencias, entre otros.
+<!-- markdownlint-disable MD000 -->
+2. **Descripción de requisitos funcionales**: El estándar recomienda describir los requisitos funcionales en términos de casos de uso, describiendo las interacciones entre los actores y el sistema. Se enfoca en qué hace el sistema y qué funcionalidades proporciona.
+<!-- markdownlint-disable MD000 -->
+3. **Descripción de requisitos no funcionales**: Los requisitos no funcionales, como el rendimiento, la seguridad, la usabilidad y la escalabilidad, también deben ser especificados según las pautas del estándar. Se enfoca en cómo debe ser el sistema en términos de características de calidad.
+<!-- markdownlint-disable MD000 -->
+4. **Formato y estilo de redacción**: El estándar sugiere una estructura y estilo de redacción coherentes para facilitar la lectura y comprensión de los requisitos. Esto incluye el uso de viñetas, tablas, gráficos y referencias cruzadas para mejorar la organización y la claridad.
+
+El estándar IEEE 830 es ampliamente utilizado en la industria del desarrollo de software como una guía para documentar los requisitos de manera efectiva. Proporciona una estructura común y coherente para la especificación de requisitos, lo que facilita la comunicación entre los miembros del equipo de desarrollo, los stakeholders y otros actores involucrados en el proyecto.
+
+Es importante destacar que el estándar IEEE 830 puede adaptarse y personalizarse según las necesidades y requisitos específicos del proyecto y la organización.
+
+----------
+
+### Estándar PMBOK
+
+El estándar PMBOK (Project Management Body of Knowledge) es una guía reconocida internacionalmente desarrollada por el Project Management Institute (PMI). PMBOK define un conjunto de conocimientos y mejores prácticas en la gestión de proyectos, abarcando áreas como el alcance, el tiempo, los costos, la calidad, los recursos, la comunicación, el riesgo y la adquisición.
+
+En el contexto del desarrollo de proyectos de software, el estándar PMBOK proporciona una estructura y un enfoque para la gestión de proyectos de software. Aunque PMBOK no se enfoca específicamente en el desarrollo de software, se puede adaptar y aplicar a proyectos de este tipo.
+
+A continuación, se describen algunas de las áreas clave que abarca el estándar PMBOK:
+
+1. **Gestión del alcance**: Se refiere a la definición, la planificación, el seguimiento y el control del alcance del proyecto de software. Esto incluye identificar y documentar los requisitos, establecer los límites y las entregas del proyecto, y gestionar los cambios en el alcance.
+<!-- markdownlint-disable MD000 -->
+2. **Gestión del tiempo**: Se ocupa de la planificación, la estimación, el seguimiento y el control del tiempo necesario para completar el proyecto de software. Esto implica desarrollar un cronograma detallado, asignar recursos, realizar seguimiento del avance y gestionar los cambios en la programación.
+<!-- markdownlint-disable MD000 -->
+3. **Gestión de costos**: Se centra en la estimación, el seguimiento y el control de los costos asociados con el desarrollo del software. Esto incluye la elaboración de presupuestos, la asignación de recursos, el seguimiento de los gastos y la gestión de los cambios en los costos.
+<!-- markdownlint-disable MD000 -->
+4. **Gestión de la calidad**: Se refiere a las actividades y procesos para garantizar que el software cumpla con los estándares y requisitos de calidad establecidos. Esto implica la planificación de la calidad, el aseguramiento de la calidad, el control de la calidad y la gestión de la mejora continua.
+<!-- markdownlint-disable MD000 -->
+5. **Gestión de riesgos**: Se ocupa de la identificación, el análisis, la evaluación y la gestión de los riesgos asociados con el proyecto de software. Esto incluye la identificación de riesgos potenciales, la planificación de respuestas a los riesgos, el seguimiento de los riesgos y la gestión de los cambios en los riesgos.
+
+El estándar PMBOK proporciona un marco común para la gestión de proyectos y promueve las mejores prácticas en esta área. Ayuda a los profesionales del desarrollo de software a entender los procesos y las actividades involucradas en la gestión de proyectos, y proporciona una terminología y una estructura comunes para la comunicación y la colaboración en el ámbito de la gestión de proyectos de software.
+
+Es importante tener en cuenta que PMBOK es un estándar y una guía, y su aplicación puede variar según las necesidades y los requisitos específicos de cada proyecto y organización.
+
+----------
+
+### Estándar ITIL
+
+El estándar ITIL (Information Technology Infrastructure Library) es un conjunto de mejores prácticas y marco de referencia para la gestión de servicios de tecnología de la información (TI). ITIL proporciona un enfoque estructurado y detallado para la planificación, la entrega y el soporte de servicios de TI de alta calidad.
+
+Aunque ITIL no se enfoca específicamente en el desarrollo de proyectos de software, es ampliamente utilizado en el contexto de la gestión de servicios de TI, que incluye el soporte y la entrega de servicios de software. Muchas organizaciones adoptan ITIL para mejorar la eficiencia y la calidad de los servicios de TI, incluido el software desarrollado.
+
+A continuación, se describen algunas áreas clave que abarca el estándar ITIL:
+
+1. **Estrategia del servicio**: Se refiere a la definición de la estrategia y los objetivos de los servicios de TI. Esto incluye la alineación de los servicios de TI con las necesidades del negocio, la identificación de oportunidades y la planificación de mejoras.
+
+2. **Diseño del servicio**: Se ocupa del diseño y la planificación de los servicios de TI, incluyendo el diseño de procesos, la definición de los niveles de servicio, la gestión de la capacidad, la disponibilidad y la continuidad del servicio.
+
+3. **Transición del servicio**: Se refiere a la implementación de nuevos servicios de TI o cambios en los servicios existentes. Esto incluye la gestión de cambios, la planificación de la liberación de software, la gestión de la configuración y la prueba y validación de los servicios.
+
+4. **Operación del servicio**: Se centra en la entrega diaria de los servicios de TI y el soporte a los usuarios. Esto incluye la gestión de incidentes, la gestión de problemas, la gestión de eventos, la gestión de solicitudes y la gestión de accesos.
+
+5. **Mejora continua del servicio**: Se refiere a la mejora constante de los servicios de TI mediante el análisis de los resultados, la identificación de áreas de mejora y la implementación de acciones correctivas y preventivas.
+
+ITIL proporciona un enfoque práctico y estructurado para la gestión de servicios de TI, que puede ser aplicado en proyectos de desarrollo de software para mejorar la calidad y el soporte de los servicios relacionados con el software. La adopción de ITIL puede ayudar a las organizaciones a establecer procesos consistentes, optimizar los recursos, mejorar la comunicación y alinear los servicios de TI con los objetivos del negocio.
+
+Es importante tener en cuenta que ITIL es un marco de referencia y una guía, y su implementación puede variar según las necesidades y los requisitos específicos de cada organización y proyecto de software.

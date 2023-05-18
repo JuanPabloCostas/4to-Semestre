@@ -1,0 +1,2 @@
+{"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\QEstándar PMBOK\\E$"}
+{"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\QEstándar ITIL\\E$"}
