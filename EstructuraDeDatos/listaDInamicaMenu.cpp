@@ -18,7 +18,10 @@ void mostrarLista(Nodo *);
 
 void buscarLista(Nodo *, int n);
 
-void eliminarLista();
+void eliminarLista(Nodo *&);
+
+void eliminarNodo(Nodo *&, int);
+
 
 Nodo * head = NULL;
 
@@ -35,6 +38,7 @@ void menu(){
     cout << "1- Insertar una lista\n";
     cout << "2- Mostrar la lista\n";
     cout << "3- Buscar elemento en la lista\n";
+    cout << "4- Eliminar Nodo\n";
     cin >> o;
 
     switch (o)
@@ -58,6 +62,15 @@ void menu(){
         cout << "Ingresa el numero a buscar en la lista: ";
         cin >> p;
         buscarLista(head, p);
+        break;
+    case 4:
+        int j;
+        cout << "Ingresa el nodo a eliminar: ";
+        cin >> j;
+        eliminarNodo(head, p);
+        break;
+    case 5:
+        eliminarLista(head);
         break;
     default:
         loop = false;
@@ -118,4 +131,48 @@ void buscarLista (Nodo * head, int n){
     {
         cout << "El numero " << n << " NO se ah econtrado en la lista";
     }
+}
+
+void eliminarNodo(Nodo *& head, int n){
+    if (head!=NULL)
+    {
+        Nodo *aux_delete;
+        Nodo *previos = NULL;
+        aux_delete=head;
+
+        while ((aux_delete!=NULL)&&(aux_delete->data != n))
+    {
+        previos=aux_delete;
+        aux_delete = aux_delete -> next;
+    }
+    if (previos!=NULL)
+    {
+        head = head -> next;
+        delete aux_delete;
+    }
+    else if (aux_delete==NULL)
+    {
+        cout << "El elemento no se ah encontrado";
+    }
+    else{
+        previos->next=aux_delete->next;
+        delete aux_delete;
+    }
+    
+    }
+    else{
+        cout << "La lista esta vacia";
+    }
+    
+}
+
+void eliminarLista(Nodo *& head){
+    while (head!=NULL)
+    {
+        Nodo *aux_delete;
+        aux_delete=head;
+        head=aux_delete->next;
+        delete aux_delete;
+    }
+    
 }

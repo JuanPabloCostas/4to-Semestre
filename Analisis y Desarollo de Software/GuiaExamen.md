@@ -386,7 +386,7 @@ Es importante tener en cuenta que las métricas basadas en la función son solo 
 
 ### Métrica de bang
 
-La métrica de bang se refiere a la relación entre los beneficios obtenidos y los costos y esfuerzos invertidos en un proyecto de software. Se utiliza para evaluar la **eficiencia, riesgo y el impacto** de un proyecto.
+La métrica de bang se refiere a la relación entre los beneficios obtenidos y los costos y esfuerzos invertidos en un proyecto de software. Se utiliza para evaluar la **eficiencia, riesgo y el impacto** de un proyecto o características.
 
 ----------
 
@@ -446,7 +446,7 @@ En resumen, los indicadores son medidas cuantitativas o cualitativas utilizadas 
 
 ## Estándares
 
-### ISO
+### ISO 2008
 
 ISO (Organización Internacional de Normalización) es una organización independiente y no gubernamental que se dedica a establecer estándares internacionales en diversos campos, incluido el desarrollo de proyectos de software. Los estándares ISO proporcionan pautas y mejores prácticas para ayudar a las organizaciones a lograr la calidad, la seguridad, la eficiencia y la compatibilidad en sus procesos y productos.
 
