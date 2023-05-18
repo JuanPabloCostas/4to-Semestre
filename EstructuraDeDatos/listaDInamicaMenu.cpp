@@ -39,12 +39,15 @@ void menu(){
     cout << "2- Mostrar la lista\n";
     cout << "3- Buscar elemento en la lista\n";
     cout << "4- Eliminar Nodo\n";
+    cout << "5- Eliminar Lista\n";
     cin >> o;
+
+    int n = 0;
 
     switch (o)
     {
     case 1:
-        int x, n;
+        int x;
         cout << "Ingresa la cantidad de numeros que quieras arreglar: ";
         cin >> x;
         for(int y=0; y < x; y++){
@@ -58,16 +61,14 @@ void menu(){
         mostrarLista(head);
         break;
     case 3:
-        int p;
         cout << "Ingresa el numero a buscar en la lista: ";
-        cin >> p;
-        buscarLista(head, p);
+        cin >> n;
+        buscarLista(head, n);
         break;
     case 4:
-        int j;
         cout << "Ingresa el nodo a eliminar: ";
-        cin >> j;
-        eliminarNodo(head, p);
+        cin >> n;
+        eliminarNodo(head, n);
         break;
     case 5:
         eliminarLista(head);
@@ -136,7 +137,7 @@ void buscarLista (Nodo * head, int n){
 void eliminarNodo(Nodo *& head, int n){
     if (head!=NULL)
     {
-        Nodo *aux_delete;
+        Nodo *aux_delete = new Nodo();
         Nodo *previos = NULL;
         aux_delete=head;
 
