@@ -1,4 +1,4 @@
-# ED_JuanPabloCostas_ListasDinamicas
+# ED_JuanPabloCostas_
 
 ![alt](https://randomwordgenerator.com/img/picture-generator/energy-3073847_640.jpg)
 
