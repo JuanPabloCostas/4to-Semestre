@@ -55,11 +55,12 @@ def sacarDatos(ip,hosts):
     print("\n",hosts)
     print("Rango ip:" , ip , "-" , final)
     print("Mascara:" , mask)
+    print("SubMask: " , 255-mask[0] , ",", 255-mask[1] , ",", 255-mask[2] , ",", 255-mask[3])
     print("-------------------------------\n")
     return mask
 
-ip = [148,220,0,0]
-hosts = [3500,1900,800,200,2,2,2]
+ip = [172,14,0,0]
+hosts = [6600, 5060, 2640, 2091, 1760, 1100, 660, 440, 330, 250, 250, 250, 250, 250, 198, 176, 176, 161, 110, 99, 88, 66, 55, 55, 44, 44, 33, 33, 22, 22, 2, 2, 2, 2, 2]
 
 # sacarDatos(ip,hosts)
 for i in range(len(hosts)):
