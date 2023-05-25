@@ -1,6 +1,6 @@
-# ED_JuanPabloCostas_
+# ED_JuanPabloCostas_AplicacionesDeLasPilas
 
-![alt](https://randomwordgenerator.com/img/picture-generator/energy-3073847_640.jpg)
+![alt](https://randompicturegenerator.com/img/national-park-generator/g51b6ed108bf0bcfbce1555d91a34261220668f81518f4d2aad7e4626ac37926cf0462b3528692ef5e1b04243b6e7b5fe_640.jpg)
 
 - Universidad Autónoma De Querétaro
 - Facultad de informática
@@ -13,184 +13,23 @@
 - EXP: 307081
 - 4to Semestre
 
-```c++
-#include <cstdlib> 
-#include <iostream>
+Las estructuras de pila, o "stacks" en inglés, son muy importantes en informática y tienen una amplia gama de aplicaciones debido a su flexibilidad y eficiencia. Una pila funciona en un modelo de "último en entrar, primero en salir" (LIFO), lo que significa que el último elemento que se agrega a la pila es el primero en ser removido.
 
-using namespace std;
+A continuación, menciono algunas de las aplicaciones más comunes de las pilas en informática:
 
-struct Nodo{
+**1. Gestión de memoria:** Las pilas se utilizan en la administración de memoria en sistemas de computación. Cuando una función se invoca en un programa, la memoria para sus variables locales se asigna en la pila. Cuando la función termina, estas variables se desapilan y se liberan para uso futuro.
 
-    int data;
-    Nodo *next;
+**2. Análisis sintáctico:** Las pilas son clave en los algoritmos de análisis sintáctico (como el Análisis Sintáctico Descendente Recursivo) que se utilizan en los compiladores y los intérpretes. Estos algoritmos utilizan una pila para mantener un seguimiento del punto donde se encuentran en el análisis, permitiéndoles retroceder fácilmente si toman un camino incorrecto.
 
-};
+**3. Ejecución de programas:** Las pilas se utilizan en el funcionamiento de la mayoría de los lenguajes de programación para almacenar variables locales y la dirección de retorno para las llamadas a funciones. Esto permite la recursión y el seguimiento de las llamadas a funciones.
 
-void menu();
+**4. Deshacer operaciones:** Las pilas son útiles para permitir operaciones de "deshacer" en programas. Por ejemplo, en un procesador de textos, cada vez que se hace un cambio, se puede agregar a una pila de "cambios". Para deshacer un cambio, simplemente se quita de la pila.
 
-void insertarLista(Nodo *&, int);
+**5. Navegación en páginas web:** Los navegadores web utilizan una pila para mantener un seguimiento de las páginas que has visitado. Cuando haces clic en el botón "Atrás", se desapila la URL del sitio web que estás visitando.
 
-void mostrarLista(Nodo *);
+**6. Balanceo de paréntesis y etiquetas HTML:** Las pilas se utilizan para comprobar si una secuencia de paréntesis o etiquetas HTML está correctamente balanceada. Se empuja cada paréntesis o etiqueta de apertura a la pila, y se desapila cuando se encuentra un paréntesis o etiqueta de cierre correspondiente.
 
-void buscarLista(Nodo *, int n);
+**7. Resolución de expresiones en notación polaca inversa:** Las pilas son útiles para la resolución de expresiones matemáticas en notación polaca inversa (RPN). En RPN, los operadores siguen a los operandos a los que se aplican. Una pila permite almacenar operandos hasta que se encuentren los operadores necesarios.
 
-void eliminarLista(Nodo *&);
+Estas son solo algunas de las muchas aplicaciones de las estructuras de pila en informática. Su simplicidad y eficiencia las hacen útiles en una amplia variedad de situaciones.
 
-void eliminarNodo(Nodo *&, int);
-
-
-Nodo * head = NULL;
-
-int main(){
-menu();
-}
-
-void menu(){
-    bool loop = true;
- do
- {
-    int o = 0;
-    cout << "\n\nSeleccione una opcion: \n";
-    cout << "1- Insertar una lista\n";
-    cout << "2- Mostrar la lista\n";
-    cout << "3- Buscar elemento en la lista\n";
-    cout << "4- Eliminar Nodo\n";
-    cout << "5- Eliminar Lista\n";
-    cin >> o;
-
-    int n = 0;
-
-    switch (o)
-    {
-    case 1:
-        int x;
-        cout << "Ingresa la cantidad de numeros que quieras arreglar: ";
-        cin >> x;
-        for(int y=0; y < x; y++){
-            cout << "Ingresa un numero entero: ";
-            cin >> n;
-            insertarLista(head, n);
-        }
-        break;
-    
-    case 2:
-        mostrarLista(head);
-        break;
-    case 3:
-        cout << "Ingresa el numero a buscar en la lista: ";
-        cin >> n;
-        buscarLista(head, n);
-        break;
-    case 4:
-        cout << "Ingresa el nodo a eliminar: ";
-        cin >> n;
-        eliminarNodo(head, n);
-        break;
-    case 5:
-        eliminarLista(head);
-        break;
-    default:
-        loop = false;
-        break;
-    }
- } while (loop);
-
-}
-
-void insertarLista(Nodo *& head, int n){
-
-    Nodo * new_nodo = new Nodo();
-    new_nodo -> data=n;
-    Nodo * aux1 = head;
-    Nodo * aux2;
-
-    while((aux1 != NULL) && (aux1->data < n)){
-
-        aux2 = aux1;
-        aux1 = aux1->next;
-
-    }
-
-    if(head == NULL){
-    head = new_nodo;
-    }
-    else{
-        aux2->next = new_nodo;
-    }
-    new_nodo->next = aux1;
-
-    cout << "El dato ha ingresado a la lista \n";
-}
-
-void mostrarLista(Nodo * head){
-    Nodo * actual = new Nodo();
-    actual = head;
-    while(actual != NULL){
-        cout << actual -> data << " -> ";
-        actual = actual ->next;
-    }
-}
-
-void buscarLista (Nodo * head, int n){
-    bool flag = false;
-    Nodo *actual = new Nodo();
-    actual = head;
-    while ((actual!=NULL)&&(actual->data<=n)){
-        if(actual->data==n){
-            flag=true;
-        }
-        actual = actual->next;
-    }
-    if (flag==true)
-    {
-        cout << "El numero " << n << " se ah econtrado en la posicion " << &actual;
-    } else
-    {
-        cout << "El numero " << n << " NO se ah econtrado en la lista";
-    }
-}
-
-void eliminarNodo(Nodo *& head, int n){
-    if (head!=NULL)
-    {
-        Nodo *aux_delete = new Nodo();
-        Nodo *previos = NULL;
-        aux_delete=head;
-
-        while ((aux_delete!=NULL)&&(aux_delete->data != n))
-    {
-        previos=aux_delete;
-        aux_delete = aux_delete -> next;
-    }
-    if (previos!=NULL)
-    {
-        head = head -> next;
-        delete aux_delete;
-    }
-    else if (aux_delete==NULL)
-    {
-        cout << "El elemento no se ah encontrado";
-    }
-    else{
-        previos->next=aux_delete->next;
-        delete aux_delete;
-    }
-    
-    }
-    else{
-        cout << "La lista esta vacia";
-    }
-    
-}
-
-void eliminarLista(Nodo *& head){
-    while (head!=NULL)
-    {
-        Nodo *aux_delete;
-        aux_delete=head;
-        head=aux_delete->next;
-        delete aux_delete;
-    }
-    
-}
-```
