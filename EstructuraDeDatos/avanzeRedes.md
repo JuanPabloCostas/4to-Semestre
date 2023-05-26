@@ -2,22 +2,30 @@
 
 172.14.0.0
 
--Recursos Humanos
+CDMX, QRO, MTY, PUE, GTO
+
+- Recursos Humanos
+
 176, 99, 161, 440, 33,
 
--IT
+- IT
+
 1100, 2640, 660, 22, 55,
 
--HD
+- HD
+
 55, 110, 1760, 66, 198,
 
--Ventas
+- Ventas
+
 22, 176, 330, 5060, 44,
 
--Produccion
+- Produccion
+
 44, 88, 33, 6600,
 
--Ventas en línea
+- Ventas en línea
+
 2091,
 
 -Inalambrica
