@@ -88,9 +88,7 @@ void imprimirCola(Nodo *head, Nodo *tail){
 
 void vaciar(Nodo *& head){
     while (head != NULL)
-    {
-        Nodo *actual = new Nodo();
-        
+    {        
         head = head -> next;
     }
     cout << "Cola vacia\n";
