@@ -128,6 +128,17 @@ Para configurar el puerto 24 como puerto trunk en un switch Cisco, necesitas seg
     default-router 148.220.1.1 <-- Primera usable
     ```
 
+### Como obligar al puerto 24 a ponerse en modo trunk
+
+1. Seleccionar la interfaz del puerto 24
+    ```
+    interface f0/24
+    ```
+2. Obligar el modo trunk
+   ```
+   switchport trunk encapsulation dot1q
+   ```
+
 ## Configuracion de un router
 
 ### Configurar puerta de enlace de un router
@@ -254,7 +265,7 @@ En el switch:
 
 ## Guardar la configuracion
 
-Tannto en router o switch, se utiliza el siguinte comando para guardar los cambios en caso de que se apague el dispositivo por alguna razon completamente desconocida e inesperada.
+Tanto en router o switch, se utiliza el siguinte comando para guardar los cambios en caso de que se apague el dispositivo por alguna razon completamente desconocida e inesperada.
 
 ```
 copy running-config startup-config
