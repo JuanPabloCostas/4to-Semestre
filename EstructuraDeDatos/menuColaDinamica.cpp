@@ -15,6 +15,10 @@ void imprimirCola(Nodo *, Nodo *);
 
 void vaciar(Nodo *&);
 
+void eliminar(Nodo *&);
+
+void buscar(Nodo *, int);
+
 Nodo *head = NULL;
 Nodo *tail = NULL;
 
@@ -31,6 +35,8 @@ int main(){
         cout << "1- Insertar un valor\n";
         cout << "2- Mostrar la cola\n";
         cout << "3- Vaciar cola\n";
+        cout << "4- Eliminar Nodo\n";
+        cout << "5- Buscar Nodo\n";
         cout << "> ";
         cin >> o;
         switch (o)
@@ -48,6 +54,16 @@ int main(){
 
         case 3:
             vaciar(head);
+            break;
+
+        case 4:
+            eliminar(head);
+            break;
+
+        case 5:
+            cout << "Ingresa el valor a buscar\n> ";
+            cin >> n;
+            buscar(head,n);
             break;
 
         default:
@@ -96,4 +112,35 @@ void vaciar(Nodo *& head){
     }
     cout << "Cola vacia\n";
     
+}
+
+void eliminar(Nodo *& head){
+    if (head != NULL)
+    {        
+        Nodo * aBorrar = new Nodo();
+        aBorrar = head;
+        head = head -> next;
+        cout << "|" << aBorrar -> data << "| eliminado\n";
+        delete aBorrar;
+    }
+    else
+    {
+        cout << "La cola esta vacia\n";
+    }
+}
+
+void buscar(Nodo * head, int n){
+    bool loop = true;
+    while(head != NULL && loop){
+        if (head -> data == n)
+        {
+            cout << head -> data << " encontrado en " << &head -> data << "\n";
+            loop = false;
+        }
+        head = head -> next;
+    }
+    if (loop)
+    {
+        cout << "Dato no encontrado";
+    }
 }

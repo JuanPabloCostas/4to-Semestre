@@ -45,34 +45,27 @@ def sumarIP(ip,selected=3):
         return ip
 
 
-def sacarDatos(ip,hosts):
+def sacarDatos(ip,hosts,nombre):
     mask = sacarMascara(hosts)
     # print(mask)
 
     final = Final(ip,mask)
     # print(final)
 
-    print("\n",hosts)
+    print("\n",hosts,"-",nombre)
     print("Rango ip:" , ip , "-" , final)
     print("Mascara:" , mask)
     print("SubMask: " , 255-mask[0] , ",", 255-mask[1] , ",", 255-mask[2] , ",", 255-mask[3])
     print("-------------------------------\n")
     return mask
 
-ip = [172,14,0,0]
+ip = [148,220,0,0]
 # hosts = [6600, 5060, 2640, 2091, 1760, 1100, 660, 440, 330, 250, 250, 250, 250, 250, 198, 176, 176, 161, 110, 99, 88, 66, 55, 55, 44, 44, 33, 33, 22, 22, 2, 2, 2, 2, 2]
-hosts = [12438,
-3363,
-3194,
-1647,
-580,
-2,
-2,
-2,
-2]
+hosts = [200, 150, 55, 45, 32, 23,2]
+nombre = ['VLAN 10', 'VLAN 20','','','','','R1 @ --- R2']
 
 # sacarDatos(ip,hosts)
 for i in range(len(hosts)):
-    mask = sacarDatos(ip,hosts[i])
+    mask = sacarDatos(ip,hosts[i],nombre[i])
     ip = sumarIP(Final(ip,mask))
 
