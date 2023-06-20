@@ -268,11 +268,5 @@ En el switch:
 Tanto en router o switch, se utiliza el siguinte comando para guardar los cambios en caso de que se apague el dispositivo por alguna razon completamente desconocida e inesperada.
 
 ```
-copy running-config startup-config
-```
-
-tambien es probable que funcione write memory pero no lo eh probado.
-
-```
-write memory
+copy running-config *
 ```

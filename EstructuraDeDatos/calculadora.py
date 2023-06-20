@@ -47,6 +47,7 @@ def sumarIP(ip,selected=3):
 
 def sacarDatos(ip,hosts,nombre):
     mask = sacarMascara(hosts)
+    # hola
     # print(mask)
 
     final = Final(ip,mask)
@@ -61,11 +62,13 @@ def sacarDatos(ip,hosts,nombre):
 
 ip = [148,220,0,0]
 # hosts = [6600, 5060, 2640, 2091, 1760, 1100, 660, 440, 330, 250, 250, 250, 250, 250, 198, 176, 176, 161, 110, 99, 88, 66, 55, 55, 44, 44, 33, 33, 22, 22, 2, 2, 2, 2, 2]
-hosts = [200, 150, 55, 45, 32, 23,2]
-nombre = ['VLAN 10', 'VLAN 20','','','','','R1 @ --- R2']
+hosts = [3500,2200,1500,1250,923,871,365,350,118,98,85,59,55,45,43,39,37,19,19,9,2,2,2,2,2,2,2,2,2,2,2,2]
+nombre = ['EYW','RMX','DID','VLAN50 - CNR','PUK','SML','EVW','PTX','WXR','XPT','VLAN10 - SVG','NKR','VLAN40 - XNR','DDA','VLAN70 - BLA','VLAN 60 - CAR','VLAN20 - DMG','VLAN 30 - IXN','VLAN80 - SOF','WVS','RMX @ --- PTX','WXR @ --- PTX','WXR @ --- WBS','EVW @ --- WBS','EVW @ --- SML','DID @ --- SML','DID @ --- PUK','DDA @ --- PUK','DDA @ --- NKR','STU @ --- NKR','STU @ --- XPT','RMX @ --- XPT']
 
 # sacarDatos(ip,hosts)
 for i in range(len(hosts)):
     mask = sacarDatos(ip,hosts[i],nombre[i])
     ip = sumarIP(Final(ip,mask))
+
+
 
